@@ -1,7 +1,7 @@
 <template>
 <div>
 <p>
-  Introdaction
+  Introduction
 </p>
 </div>
 </template>

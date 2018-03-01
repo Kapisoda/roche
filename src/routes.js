@@ -1,5 +1,5 @@
 import Exam from './assets/Exam.vue';
-import Introdaction from './assets/Introdaction.vue';
+import Introduction from './assets/Introduction.vue';
 import Quiz from './assets/Quiz.vue';
 import Success from './assets/SuccessPage.vue';
 import UserProfile from './assets/UserProfile.vue';
@@ -7,11 +7,11 @@ import UserProfile from './assets/UserProfile.vue';
 
 
 export const routes= [
-    {path: '/exam', components: {
+    {path: '/exam', name: 'exam', components: {
         default: Exam
       }},
-    {path: '/introdaction', components: {
-          default: Introdaction
+    {path: '/introduction', components: {
+          default: Introduction
     }},
     {path: '/quiz', components: {
           default: Quiz
@@ -21,5 +21,7 @@ export const routes= [
     }},
     {path: '/userProfile', components: {
           default: UserProfile
-    }}
+    }},
+    // {path: '/redirect-me', redirect: {name: 'home'}}
+    {path: '*', redirect: {name: 'exam'}}
     ];
