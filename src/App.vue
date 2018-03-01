@@ -30,6 +30,7 @@
   <ul v-for="arr in courses.curriculum">
     <li>
       {{arr.title}}
+      {{arr.title}}
     </li>
   </ul>
 </div>
